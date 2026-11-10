@@ -1,0 +1,156 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+  color: #172b45;
+}
+
+header {
+  background: #071b35;
+  color: white;
+  padding: 22px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 12px;
+}
+
+nav a:hover {
+  color: #55d6e8;
+}
+
+.hero {
+  background: linear-gradient(
+    120deg, #071b35, #14528a
+  );
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero h2 {
+  color: #68d9ec;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  max-width: 650px;
+  margin: 20px auto;
+  line-height: 1.8;
+}
+
+.btn {
+  display: inline-block;
+  background: #1687df;
+  color: white;
+  padding: 14px 25px;
+  margin-top: 20px;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+section {
+  padding: 65px 8%;
+  text-align: center;
+}
+
+section h1 {
+  margin-bottom: 35px;
+  color: #0c3158;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px #00000012;
+}
+
+.card h2 {
+  color: #1769ad;
+  margin-bottom: 15px;
+}
+
+.card p {
+  line-height: 1.7;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+
+.safety {
+  background: #e8f2fc;
+}
+
+.tips {
+  line-height: 2.5;
+  font-size: 18px;
+}
+
+.report {
+  background: #0c3158;
+  color: white;
+}
+
+.report h1,
+.report h2 {
+  color: white;
+  margin: 20px;
+}
+
+#contact a {
+  color: #1674c3;
+}
+
+footer {
+  background: #071b35;
+  color: white;
+  text-align: center;
+  padding: 35px;
+  line-height: 2;
+}
+
+@media(max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
